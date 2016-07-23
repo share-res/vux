@@ -65,9 +65,6 @@ export default {
     if (this.equalWith) {
       this.showClear = false
     }
-    if (this.required && !this.value) {
-      this.valid = false
-    }
     if (this.isType === 'email') {
       this.type = 'email'
     }

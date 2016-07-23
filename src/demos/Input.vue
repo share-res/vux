@@ -35,16 +35,16 @@
         <img slot="right" src="http://weui.github.io/weui/images/vcode.jpg">
       </x-input>
       <x-input title="发送验证码" class="weui_vcode">
-        <x-button slot="right" type="primary">发送验证码</x-button>
+        <x-button slot="right" style="width:120px;" type="primary">发送验证码</x-button>
       </x-input>
     </group>
 
-    <group title="check if value is valid when required===true">
+    <group title="check if value is valid when required===true" class="weui_cells_form">
       <x-input title="message" placeholder="I'm placeholder" v-ref:input></x-input>
       <cell title="get valid value" :value="'$valid value:' + $refs.input.valid"></cell>
     </group>
 
-     <group title="check if value is valid when required===false">
+     <group title="check if value is valid when required===false" class="weui_cells_form">
       <x-input title="message" placeholder="I'm placeholder" :required="false" v-ref:input02></x-input>
       <cell title="get valid value" :value="'$valid value:' + $refs.input02.valid"></cell>
     </group>
